@@ -7,3 +7,72 @@
 // styled using ID selectors but take the time to think about the elements
 // that are common across all components of the page and use class selectors
 // where appropriate.
+
+//padding nav + 
+//transition button + a +
+//form focus label up change color transition
+// how works arrows span h1 w arrow  lengt after border 2 rotate
+// css slider
+
+@import 'top';
+@import 'advantages-top';
+@import 'advantages-center';
+@import 'advantages-bottom';
+@import 'comission';
+@import 'feedback';
+@import 'how-works';
+@import 'footer';
+
+// LAYOUT
+//==============
+.container {
+  width: 1020px;
+  // max-width: 100%;
+  // min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+// FLEX
+//==============
+.flex {
+  display: flex;
+} 
+
+// SPAN
+//=============
+.text-color-accent {
+  color: $color-accent;
+  text-transform: uppercase;
+}
+
+.amount {
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.7;
+  letter-spacing: normal;
+  color: $white-two;
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: $color-accent;
+    margin: 0 auto 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

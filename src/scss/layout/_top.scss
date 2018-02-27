@@ -1,0 +1,126 @@
+.top {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.top-nav {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+nav {
+  justify-content: center;
+
+  a {
+    padding: 10px;
+    margin-right: 5px;
+  }
+}
+
+.form-container {
+  margin: auto;
+  width: 700px;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: rgba( $black-two, .55 );
+
+  form {
+    margin-right: 60px;
+    padding-bottom: 40px;
+    // flex: 1;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+    a {
+      text-transform: lowercase;
+    }
+    p {
+      margin: 18px 0 0 0;
+      font-size: 12px;
+      // background: pink;
+      position: relative;
+      // text-align: center;
+      // background: brown;
+      &:first-child {
+        margin-top: 40px;
+        text-align: center;
+      }
+      &:last-child {
+        text-align: center;
+      }
+      label:first-child {
+        text-transform: initial;
+        margin-top: 5px;
+        font-size: 11px;
+        display: block;
+      }
+      
+    }
+
+    input {
+      width: 280px;
+      border-bottom: 1px solid $white-two;
+      position: relative;
+      z-index: 3;
+      &:hover {
+        border-bottom: 1px solid $color-accent;
+      }
+
+      &[type="checkbox"] {
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid $white-two;
+        border-radius: 2px;
+        height: 12px;
+        width: 12px;
+        margin: 0 3px 0 0;
+        padding: 0;
+        -webkit-appearance: none;
+        -webkit-transition: .15s;
+        &:checked {
+          background: $color-accent;
+        }
+      }
+      &[type="submit"] {
+        width: 165px;
+        height: 40px;
+        &:hover {
+          border: none;
+          color: $white-two;
+          background: $dusty-orange;
+        }
+      }
+    }
+  }
+}
+
+.label-helper {
+  position: absolute;
+  opacity: 0;
+  transition: .2s bottom, .2s opacity;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+
+input:focus + .label-helper {
+    bottom: 95%;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.73;
+    letter-spacing: normal;
+    line-height: 1;
+    opacity: 1;
+    color: $color-accent;
+}
+
+.form-title {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

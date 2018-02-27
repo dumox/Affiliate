@@ -1,0 +1,25 @@
+.top {
+  background: $black url(/images/bg-top.jpg) no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.commission {
+  background: $black url(/images/bg-bottom.jpg) no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.advantages-top,
+.advantages-bottom,
+.feedback {
+  background: $white-two;
+}
+
+.how-works {
+  background: $white;
+}
+
+footer {
+  background: $black;
+}

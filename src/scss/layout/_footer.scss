@@ -1,0 +1,22 @@
+footer {
+  padding: 70px 0;
+}
+
+.bottom-nav {
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  
+  nav {
+    width: 50%;
+    padding-left: 130px;
+    flex-wrap: wrap;
+
+    a {
+      text-align: left;
+      width: 150px;
+      padding: 10px;
+      margin: 5px;
+    }
+  }
+}

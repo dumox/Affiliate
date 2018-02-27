@@ -1,0 +1,108 @@
+.how-works {
+  padding: 60px 0 ;
+  .title {
+    padding-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    h2 {
+      font-weight: 800;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+}
+
+.wflow-container {
+  padding-bottom: 65px;
+  .step {
+    text-align: center;
+    width: 240px;
+    min-height: 240px;
+    margin-right: 25px;
+    border-radius: 5px;
+    background: $color-secondary;
+    position: relative;
+  &:not(:last-child)::after {
+    content: '\002192';
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px;
+    display: inline-block;
+    color: $color-accent;
+    background: $white-two;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px 0 rgba(13, 16, 18, 0.15);
+    position: absolute;
+    top: 40%;
+    left: 92%;
+    z-index: 2;
+  }
+  &:nth-child(odd) {
+    background-color: $color-accent;
+    span {
+      color: $color-secondary;
+    }
+    p {
+      color: $color-secondary;
+      span {
+        color: $white-two;
+      }
+    }
+    
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  }
+}
+
+.step {
+  span {
+    color: $color-accent;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  p {
+    color: $white-two;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+   span {
+    // color: $white-two;
+
+    margin: 0 0 15px;
+
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    // line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+   } 
+  }
+}
+
+.button-container {
+  button {
+    width: 185px;
+  }
+}

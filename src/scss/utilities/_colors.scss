@@ -18,11 +18,30 @@ $pale-sky:                  #6b717f;
 $midnight-blue:             #036;
 $black:                     #000;
 
+// Colors used in layers according to zeplin naming
+// =============
+$black-two:                 #000000;
+$white:                     #EEEEEE;
+$dark:                      #110c15;
+$black:                     #212121;
+$turquoise:                 #00c3b8;
+$greyish-brown:             #454545;
+$white-two:                 #ffffff;
+$warm-grey:                 #a1a1a1;
+$greyish:                   #a5a5a5;
+$dusty-orange:              #f26c4f;
+$pastel-orange:             #fe984e;
+$light-urple:               #a97cf8;
+$charcoal-grey:             #2f2e34;
+$deep-teal:                 #005d58;
+
+
+
 // main color palette
 // =============
-$color-primary:             $hopbush;
-$color-secondary:           $bouquet;
-$color-accent:              $patina;
+$color-primary:             $turquoise;
+$color-secondary:           $greyish-brown;
+$color-accent:              $turquoise;
 $color-shadow:              rgba($black, .125);
 $color-note:                #666;
 
@@ -38,7 +57,7 @@ $color-text-invert:         rgba($color-background, .75);
 $color-text-strong-invert:  $color-background;
 
 // Links
-$color-link:                $color-primary;
+$color-link:                $dusty-orange;
 $color-link-hover:          $midnight-blue;
 $color-link-visited:        $bouquet;
 

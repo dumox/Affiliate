@@ -207,7 +207,7 @@ gulp.task('copy', function () {
         .pipe(reload({stream: true}));
     // copy img to dist directly
 
-    //copy images to dist/image
+    // copy images to dist/image
     gulp.src(bases.app + 'images/**/*.*')
         .pipe(size({gzip: true, showFiles: true}))
         .pipe(gulp.dest(bases.dist + 'images/'))
@@ -227,6 +227,11 @@ gulp.task('copy', function () {
 
     gulp.src([bases.app + 'manifest/**/*.*'])
         .pipe(gulp.dest(bases.root))
+        .pipe(reload({stream: true}));
+
+    // copy fonts to dist/fonts
+    gulp.src(bases.app + 'fonts/**/*.{ttf,woff,woff2,eof,eot,svg}')
+        .pipe(gulp.dest(bases.dist + '/fonts'))
         .pipe(reload({stream: true}));
 
 });
