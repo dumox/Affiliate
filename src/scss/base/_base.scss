@@ -26,7 +26,7 @@ a {
   text-decoration: none;
   transition: all .2s  linear;
   text-transform: uppercase;
-  font-family: 'Open Sans Semibold';
+  font-family: "Open Sans Semibold";
   font-size: 12px;
   font-weight: 600;
   font-style: normal;
@@ -47,7 +47,7 @@ button {
   border: none;
   background-color: $dusty-orange;
   border-radius: 20px;
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -75,7 +75,7 @@ li {
 }
 
 label {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -88,7 +88,7 @@ label {
 input {
   background: transparent;
   border: none;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -119,7 +119,7 @@ input {
 input[type="submit"] {
   width: 165px;
   height: 40px;
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   color: $dusty-orange;
   background: $white-two;
   border-radius: 20px;
