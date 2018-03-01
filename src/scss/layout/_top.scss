@@ -30,25 +30,26 @@ nav {
   form {
     margin-right: 60px;
     padding-bottom: 40px;
-    // flex: 1;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
+
+    span {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+    }
     a {
       text-transform: lowercase;
     }
-    p {
+
+    div {
       margin: 18px 0 0 0;
       font-size: 12px;
-      // background: pink;
       position: relative;
-      // text-align: center;
-      // background: brown;
+
       &:first-child {
         margin-top: 40px;
         text-align: center;
       }
+
       &:last-child {
         text-align: center;
       }
@@ -58,7 +59,6 @@ nav {
         font-size: 11px;
         display: block;
       }
-      
     }
 
     input {
@@ -66,6 +66,7 @@ nav {
       border-bottom: 1px solid $white-two;
       position: relative;
       z-index: 3;
+
       &:hover {
         border-bottom: 1px solid $color-accent;
       }
@@ -85,9 +86,11 @@ nav {
           background: $color-accent;
         }
       }
+
       &[type="submit"] {
         width: 165px;
         height: 40px;
+        
         &:hover {
           border: none;
           color: $white-two;
@@ -104,7 +107,14 @@ nav {
   transition: .2s bottom, .2s opacity;
   bottom: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1; 
+}
+// clear placeholder on focus
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent;}
 
 input:focus + .label-helper {
     bottom: 95%;

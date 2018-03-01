@@ -14,7 +14,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   color: $color-text;
-  font-family: $font-family-default;
+  font-family: 'Open Sans', sans-serif;
   min-height: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -26,7 +26,6 @@ a {
   text-decoration: none;
   transition: all .2s  linear;
   text-transform: uppercase;
-  font-family: "Open Sans Semibold";
   font-size: 12px;
   font-weight: 600;
   font-style: normal;
@@ -75,7 +74,6 @@ li {
 }
 
 label {
-  font-family: "Open Sans";
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -88,7 +86,6 @@ label {
 input {
   background: transparent;
   border: none;
-  font-family: "Open Sans";
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -112,7 +109,6 @@ input {
     outline-style: none;
     box-shadow: none;
     border-color: transparent;
-  
   }
 }
 

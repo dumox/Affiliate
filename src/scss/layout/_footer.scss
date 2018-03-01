@@ -7,12 +7,13 @@ footer {
   align-items: center;
   align-content: center;
   
-  nav {
+  div {
     width: 50%;
-    padding-left: 130px;
+    padding-left: 200px;
     flex-wrap: wrap;
 
     a {
+      display: block;
       text-align: left;
       width: 150px;
       padding: 10px;

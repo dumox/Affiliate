@@ -47,7 +47,10 @@
 	<!-- http://mathiasbynens.be/notes/touch-icons -->
 	<link rel="icon" type="image/ico" href="favicon.ico">
 	<link rel="icon" type="image/png" href="favicon.png">
-
+	<!-- Open Sans font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
+	<!-- Playfair Display font -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
 	<!-- CSS, you gotta have style -->
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -62,11 +65,9 @@
 
 			<header>
 				<div class="top-nav flex">
-					<div class="logo">
-					  <a href="#">
-						<img src="/images/logo.png" alt="">
-					  </a>
-					</div>
+					<a href="#">
+					<img src="./images/logo.png" alt="Company Logo">
+					</a>
 					<nav class="flex">
 						<a href="#">Главная</a>
 						<a href="#">Наши преимущества</a>
@@ -85,27 +86,27 @@
 					   прямо сейчас</h1>
 				</div>
 				<form>
-					<p><span class="text-color-accent">Регистрируйся</span></p> 
-					<p><input type="text" name="user-name" required placeholder="Имя пользователя" id="user-name">
+					<span class="text-color-accent">Регистрируйся</span>
+					<div><input type="text" name="user-name" required placeholder="Имя пользователя" id="user-name">
 						<label for="user-name" class="label-helper">Имя пользователя</label>
-					</p>
-					<p>
+					</div>
+					<div>
 						<input type="email" name="userEmail" required placeholder="Электронная почта" id="user-email">
 						<label for="user-email" class="label-helper">Электронная почта</label>
-					</p>
-					<p>
+					</div>
+					<div>
 						<input type="password"  name="password" required placeholder="Пароль" id="user-password">
 						<label for="user-password" class="label-helper">Пароль</label>
-					</p>
-					<p>
+					</div>
+					<div>
 						<input type="password" name="passwordConfirm" required placeholder="Подтвердите пароль" id="user-password-confirm">
 						<label for="user-password-confirm" class="label-helper">Подтвердите пароль</label>
-					</p>
-					<p>
+					</div>
+					<div>
 						<input type="checkbox" id="accept">
 						<label for="accept">Я принимаю <a href="#" class="text-color-accent"> правила и условия</a></label>
-					</p>
-					<p><input type="submit" value="отправить заявку"></p>
+					</div>
+					<div><input type="submit" value="отправить заявку"></div>
 				</form>
 
 			</div><!--.form end-->
@@ -124,7 +125,7 @@
 						<div class="col flex">
 							<h2>Наши <br>
 								<span class="text-color-accent">Преимущества</span> </h2>
-							<img src="/images/pic-1.png" alt="">
+							<img src="./images/pic-1.png" alt="">
 						</div>
 
 						<div class="col">
@@ -183,7 +184,7 @@
 							<h2>ваши <br>
 								<span class="text-color-accent">Преимущества</span>
 							</h2>
-							<img src="/images/pic-2.png" alt="">
+							<img src="./images/pic-2.png" alt="">
 						</div>
 
 						<div class="col">
@@ -248,13 +249,37 @@
 					</div>
 					<div class="col">
 						<a href="#" class="prev">&larr;</a>
-						<div class="card-feedback">
-							
-							<img src="/images/user-pic.png" alt="" class="avatar">
-							<span class="name">Веб Дядько</span>
-							<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+						<!-- SLIDER -->
+						<div class="c-slider" id="hammer-slider">
+								<div class="c-slider__container">
+									<!-- Slide 1 -->
+									<div class="c-slider__slide">
+										<div class="card-feedback">
+											<img src="./images/user-pic.png" alt="" class="avatar">
+											<span class="name">Веб Дядько</span>
+											<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+										</div>
+									</div>
+									<!-- Slide 2 -->
+									<div class="c-slider__slide">
+											<div class="card-feedback">
+												<img src="./images/user-pic.png" alt="" class="avatar">
+												<span class="name">Other Man 1</span>
+												<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+											</div>
+									</div>
+									<!-- Slide 3 -->
+									<div class="c-slider__slide">
+											<div class="card-feedback">
+												<img src="./images/user-pic.png" alt="" class="avatar">
+												<span class="name">Other Man 2</span>
+												<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+											</div>
+									</div>
+								</div>
 						</div>
 					</div>
+					<!-- SLIDER END -->
 
 				</div>
 			</section><!--feedback end-->
@@ -310,17 +335,15 @@
 	<footer>
 		<div class="container">
 				<div class="bottom-nav flex">
-					<div class="logo">
-						<a href="#">
-						<img src="/images/logo.png" alt="">
-						</a>
-					</div>
-					<nav class="flex">
+					<a href="#">
+					<img src="./images/logo.png" alt="Company Logo">
+					</a>
+					<div class="flex">
 						<a href="#">Главная</a>
 						<a href="#">Наши преимущества</a>
 						<a href="#">Как это работает</a>
 						<a href="#">Комиссии</a>
-					</nav>
+					</div>
 				</div>
 		</div>
 	</footer>
