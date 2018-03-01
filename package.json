@@ -12,7 +12,9 @@
     "gulp": "gulp",
     "deploy": "gulp build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "hammer-slider": "^0.1.11"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
