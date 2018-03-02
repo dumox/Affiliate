@@ -1,27 +1,35 @@
 .top {
-  background: $black url(../images/bg-top.jpg) no-repeat;
+  background-color: $black;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url('../images/bg-top.jpg');
 }
 
 .commission {
-  background: $black url(../images/bg-bottom.jpg) no-repeat;
+  background: 
+    linear-gradient(
+        rgba($black-two, 0.45), 
+        rgba($black-two, 0.45)
+      ),
+      /* bottom, image */
+      url('../images/bg-bottom.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+
 }
 
 .advantages-top,
 .advantages-bottom,
 .feedback {
-  background: $white-two;
+  background-color: $white-two;
 }
 
 .how-works {
-  background: $white;
+  background-color: $white;
 }
 
 footer {
-  background: $black;
+  background-color: $black;
 }

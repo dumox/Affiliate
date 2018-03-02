@@ -21,25 +21,8 @@ body {
 }
 
 a {
-  background: transparent;
-  color: $white-two;
   text-decoration: none;
   transition: all .2s  linear;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: center;
-  &:hover {
-    color: $color-accent;
-  }
-  &:active, &:focus {
-    color: lighten($color-accent, 20%);
-    border: none;
-    outline: none;
-  }
 }
 
 img {
@@ -47,84 +30,6 @@ img {
   max-width: 100%;
 }
 
-button {
-  border: none;
-  background-color: $dusty-orange;
-  border-radius: 20px;
-  font-family: "Gotham Pro";
-  font-size: 12px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $white-two;
-  width: 150px;
-  height: 40px;
-  padding: 10px 0;
-  text-transform: uppercase;
-  transition: all .2s;
-
-  &:hover, &:focus {
-    color: $dusty-orange;
-    background: $white-two;
-    border-radius: 20px;
-    outline: none;
-  }
-}
-
-
 li {
   @include reset-list;
 }
-
-label {
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  color: $white-two;
-}
-
-input {
-  background: transparent;
-  border: none;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  color: $white-two;
-  transition: all .2s;
-  -webkit-appearance: none;
-
-  &::placeholder {
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.5;
-    letter-spacing: normal;
-    color: $white-two;
-  }
-  &:focus {
-    outline-style: none;
-    box-shadow: none;
-    border-color: transparent;
-  }
-}
-
-input[type="submit"] {
-  width: 165px;
-  height: 40px;
-  text-transform: uppercase;
-  font-family: "Gotham Pro";
-  color: $dusty-orange;
-  background: $white-two;
-  border-radius: 20px;
-}
-

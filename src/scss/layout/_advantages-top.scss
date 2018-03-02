@@ -1,8 +1,17 @@
 .advantages-top {
-  padding-bottom: 60px;
-
+  padding: 60px 0;
+  .container {
+    align-items: center;
+  }
   .col {
-
+    // box-sizing: border-box;
+    // width: 400px;
+    // width: 100%;
+    width: 400px;
+    background: burlywood;
+    h2 {
+      margin-bottom: 35px;
+    }
     img {
       transform: translateX(-50px);
     }
@@ -10,42 +19,43 @@
     &:first-child {
       align-items: center;
       flex-wrap: wrap;  
-      width: 40%
+      // width: 40%
       }
 
     &:nth-of-type(2) {
-      width: 60%;
+      width: 560px;
+      // width: 100%;
     }
   }
-}
 
-.advantages-top {
   .advantages-items {
+    background: blue;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
+    margin: 0;
 
     .advantage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $color-secondary;
-    color: $white-two;
-    border-radius: 5px;
-    box-shadow: 0px 10px 15px 0px rgba(13, 16, 18, 0.15);
-    margin-top: 30px;
-    height: 100px;
-    width: 250px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.14;
-    letter-spacing: normal;
-    position: relative;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color-secondary;
+      color: $white-two;
+      border-radius: 5px;
+      box-shadow: 0px 10px 15px 0px rgba(13, 16, 18, 0.15);
+      margin-bottom: 30px;
+      height: 100px;
+      width: 250px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.14;
+      letter-spacing: normal;
+      position: relative;
 
     &::before {
       content: '';
