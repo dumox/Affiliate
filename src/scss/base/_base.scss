@@ -35,6 +35,11 @@ a {
   &:hover {
     color: $color-accent;
   }
+  &:active, &:focus {
+    color: lighten($color-accent, 20%);
+    border: none;
+    outline: none;
+  }
 }
 
 img {
@@ -65,6 +70,7 @@ button {
     color: $dusty-orange;
     background: $white-two;
     border-radius: 20px;
+    outline: none;
   }
 }
 
@@ -115,6 +121,7 @@ input {
 input[type="submit"] {
   width: 165px;
   height: 40px;
+  text-transform: uppercase;
   font-family: "Gotham Pro";
   color: $dusty-orange;
   background: $white-two;
