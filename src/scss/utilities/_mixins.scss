@@ -141,3 +141,19 @@
 // @usage - `@include invisible`
 
 @mixin invisible { visibility: hidden; }
+
+// Layout design element
+//
+// Square 8px element for decorating
+//
+// $color - Defaults to `color-accent`.
+//
+// @usage - `@include square`
+
+@mixin square($color: $color-accent) { 
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: $color; 
+}

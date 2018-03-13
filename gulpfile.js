@@ -95,6 +95,8 @@ gulp.task('styles', function () {
     return gulp.src(bases.app + 'scss/styles.scss')
         .pipe(plumber({errorHandler: onError}))
         .pipe(sourcemaps.init())
+        // add map file
+        // .pipe(sourcemaps.write('./maps'))
         .pipe(sass(sassOptions))
         .pipe(size({gzip: true, showFiles: true}))
         .pipe(prefix(prefixerOptions))
@@ -205,7 +207,6 @@ gulp.task('copy', function () {
         .pipe(size({gzip: true, showFiles: true}))
         .pipe(gulp.dest(bases.dist))
         .pipe(reload({stream: true}));
-    // copy img to dist directly
 
     // copy images to dist/image
     gulp.src(bases.app + 'images/**/*.*')
@@ -242,6 +243,15 @@ gulp.task('sass-lint', function () {
         .pipe(sassLint.format())
         .pipe(sassLint.failOnError());
 });
+
+// add css source map
+// gulp.task('sass', function () {
+//  return gulp.src('scss/**/*.scss')
+//   .pipe(sourcemaps.init())
+//   .pipe(sass().on('error', sass.logError))
+//   .pipe(sourcemaps.write('./maps'))
+//   .pipe(gulp.dest('./css'));
+// });
 
 gulp.task('minify-html', function () {
     gulp.src(bases.app + './*.html')

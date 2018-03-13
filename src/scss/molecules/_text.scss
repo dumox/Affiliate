@@ -1,0 +1,60 @@
+//  HEADING'S TEXT CLASSES
+//=============
+.title-text {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 45px;
+  font-size: 30px;
+  font-weight: 600;
+
+  &--center {
+    text-align: center;
+  }
+
+  &--light {
+    color: $white-two;
+  }
+
+  &--dark {
+    color: $greyish-brown;
+  }
+
+  &--highlight {
+    font-weight: 800;
+    color: $color-accent;
+  }
+}
+
+.sub-title {
+  font-style: italic;
+  width: 580px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  
+  &--primary {
+    color: $white-two;
+  }
+
+  &--secondary {
+    color: $warm-grey;
+  }
+}
+
+.text-box {
+  max-width: 400px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: $greyish-brown;
+
+  &__title {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__text {
+    text-align: left;
+  }
+}

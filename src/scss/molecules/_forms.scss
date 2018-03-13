@@ -1,0 +1,84 @@
+.form {
+  width: 280px;
+  font-size: 12px;
+
+  &__title {
+      font-weight: 600;
+      line-height: 2.5;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-accent;
+      margin: 0;
+  }
+
+  &__field {
+    margin: 18px 0 0 0;
+    position: relative;
+  }
+
+  &__btn-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $white-two;
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  font-weight: bold;
+  color: $white-two;
+  line-height: 2.5;
+  transition: all .2s;
+  -webkit-appearance: none;
+  
+  &:hover, &:focus {
+    outline: none;
+    // border-bottom: 1px solid $color-accent;
+  }
+
+}
+
+
+
+
+///////////////////
+// FOCUS EFFECTS
+//////////////////
+
+.input__label-content {
+	position: relative;
+	display: block;
+  width: 100%;
+  font-weight: normal;
+  transition: transform 0.3s;
+}
+
+.input__label--haruki {
+	position: absolute;
+  width: 100%;
+  left: 0;
+	pointer-events: none;
+}
+
+.input__field--haruki:focus + .input__label--haruki .input__label-content--haruki,
+.input--filled .input__label-content--haruki {
+	// -webkit-transform: translate3d(0, -90%, 0);
+  transform: translate3d(0,-15px, 0);
+  color: $color-accent;
+}
+
+// .input__field--haruki:focus + .input__label--haruki::before,
+// .input--filled .input__label--haruki::before {
+// 	-webkit-transform: translate3d(0, -0.5em, 0);
+// 	transform: translate3d(0, -0.5em, 0);
+// }
+
+// .input__field--haruki:focus + .input__label--haruki::after,
+// .input--filled .input__label--haruki::after {
+// 	-webkit-transform: translate3d(0, 0.5em, 0);
+// 	transform: translate3d(0, 0.5em, 0);
+// }

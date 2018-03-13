@@ -60,172 +60,181 @@
 
 </head>
 <body>
-	<div class="top">
+	<section class="top">
 		<div class="container">
 
 			<header>
-				<div class="top-nav flex">
+				<div class="nav-top flex">
 					<a href="#">
 					<img src="./images/logo.png" alt="Company Logo">
 					</a>
 					<nav class="flex">
-						<a class="link" href="#">Главная</a>
-						<a class="link" href="#">Наши преимущества</a>
-						<a class="link" href="#">Как это работает</a>
-						<a class="link" href="#">Комиссии</a>
-						<button class="btn">войти</button>
+						<a class="link nav-top__link" href="#">Главная</a>
+						<a class="link nav-top__link" href="#">Наши преимущества</a>
+						<a class="link nav-top__link" href="#">Как это работает</a>
+						<a class="link nav-top__link" href="#">Комиссии</a>
+						<button class="btn btn--primary">войти</button>
 					</nav>
 				</div>
 			</header>
 
 			<div class="form-container flex">
 
-				<h1 class="title-text">Начинайте <br>
-						<span class="text-color-accent">зарабатывать</span><br>
+				<h1 class="title-text title-text--light">Начинайте <br>
+						<span class="title-text--highlight">зарабатывать</span><br>
 						прямо сейчас
 				</h1>
 				<form class="form">
-					<h4 class="text-color-accent">Регистрируйся</h4>
-					<div><input type="text" name="user-name" required placeholder="Имя пользователя" id="user-name">
-						<label for="user-name" class="label-helper">Имя пользователя</label>
+					<h4 class="form__title">Регистрируйся</h4>
+					<div class="form__field input input--haruki">
+						<input type="text" name="user-name" required id="user-name" class="input input__field input__field--haruki">
+						<label for="user-name" class="input__label input__label--haruki">
+							<span class="input__label-content input__label-content--haruki">Имя пользователя</span>
+						</label>
 					</div>
-					<div>
-						<input type="email" name="userEmail" required placeholder="Электронная почта" id="user-email">
-						<label for="user-email" class="label-helper">Электронная почта</label>
+					<div class="form__field input input--haruki">
+						<input type="email" name="userEmail" required id="user-email" class="input input__field input__field--haruki">
+						<label for="user-email" class="input__label input__label--haruki">
+							<span class="input__label-content input__label-content--haruki">Электронная почта</span>
+						</label>
 					</div>
-					<div>
-						<input type="password"  name="password" required placeholder="Пароль" id="user-password">
-						<label for="user-password" class="label-helper">Пароль</label>
+					<div class="form__field input input--haruki">
+						<input type="password"  name="password" required id="user-password"class="input input__field input__field--haruki">
+						<label for="user-password" class="input__label input__label--haruki">
+							<span class="input__label-content input__label-content--haruki">Пароль</span>
+						</label>
 					</div>
-					<div>
-						<input type="password" name="passwordConfirm" required placeholder="Подтвердите пароль" id="user-password-confirm">
-						<label for="user-password-confirm" class="label-helper">Подтвердите пароль</label>
+					<div class="form__field input input--haruki">
+						<input type="password" name="passwordConfirm" required id="user-password-confirm" class="input input__field input__field--haruki">
+						<label for="user-password-confirm" class="input__label input__label--haruki">
+							<span class="input__label-content input__label-content--haruki">Подтвердите пароль</span>
+						</label>
 					</div>
-					<div>
+					<div class="form__field">
 						<input type="checkbox" id="accept">
 						<label for="accept">Я принимаю <a href="#" class="text-color-accent"> правила и условия</a></label>
 					</div>
-					<div><input type="submit" value="отправить заявку"></div>
+					<div class="form__btn-container"><button type="submit" class="btn btn--secondary">отправить заявку</button></div>
 				</form>
 
 			</div><!--.form end-->
 
 		</div>
 
-	</div><!--top end-->
+	</section><!--top end-->
 
 	<main>
-		<section class="advantages-top">
-			<div class="container flex">	
-
-				<div class="col flex">
-					<h2 class="title-text">Наши <br>
-						<span class="text-color-accent">Преимущества</span> </h2>
-					<img src="./images/pic-1.png" alt="Casino">
-				</div>
-
-				<div class="col">
-					<ul class="advantages-items flex">
-						<li class="advantage">Удобный интерфейс</li>
-						<li class="advantage">Мобильный доход</li>
-						<li class="advantage">Реферальная система</li>
-						<li class="advantage">Поддержка 24/7</li>
-						<li class="advantage">Статистические данные</li>
-						<li class="advantage">Стабильные выплаты</li>
-					</ul>
-				</div>
-
-			</div>
-		</section><!--advantages-top end-->
-
-		<section class="advantages-center">
-			<div class="container">
-
-				<div class="advantages-title">
-					<h2 class="title-text">Качественная <span class="text-color-accent"> поддержка</span></h2>
-					<p>Консультации, помощь и поддержка по любому вопросу круглосуточно. Наша служба поддержки поможет обойти блокировку Роскомнадзора, а также:</p>
-				</div>
-
-				<div class="advantages-container flex">
-
-					<div class="advantage">
-						<h3>Наши менеджеры готовы помочь 24/7</h3>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
-					</div>
-					<div class="advantage">
-						<h3>Наши менеджеры готовы помочь 24/7</h3>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
-					</div>
-					<div class="advantage">
-						<h3>Наши менеджеры готовы помочь 24/7</h3>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
-					</div>
-					<div class="advantage">
-						<h3>Наши менеджеры готовы помочь 24/7</h3>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
-					</div>
-
-				</div>
-
-			</div>
-		</section><!--advantages-center end-->
-
-		<section class="advantages-bottom">
-			<div class="container">
-				<div class="advantages-container flex">
-
-					<div class="col">
-						<h2 class="title-text">ваши <br>
-							<span class="text-color-accent">Преимущества</span>
-						</h2>
-						<img src="./images/pic-2.png" alt="Casino">
-					</div>
-
-					<div class="col">
-						<div class="advantages-items">
-
-							<div class="advantage">
-								<h3>Учет мультиаккаунтов</h3>
-								<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+		<section class="advantages">
+				<div class="advantages__top">
+						<div class="container flex">	
+		
+							<div class="col-4-10 flex">
+								<h2 class="title-text title-text--dark">Наши <br>
+									<span class="title-text--highlight">Преимущества</span> </h2>
+								<img class="img" src="./images/pic-1.png" alt="Casino">
 							</div>
-							<div class="advantage">
-								<h3>50% RevShare на первые полгода</h3>
-								<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+		
+							<div class="col-6-10">
+								<ul class="advantages flex">
+									<li class="advantages__advantage">Удобный интерфейс</li>
+									<li class="advantages__advantage advantages__advantage--light">Мобильный доход</li>
+									<li class="advantages__advantage advantages__advantage--light">Реферальная система</li>
+									<li class="advantages__advantage">Поддержка 24/7</li>
+									<li class="advantages__advantage">Статистические данные</li>
+									<li class="advantages__advantage advantages__advantage--light">Стабильные выплаты</li>
+								</ul>
 							</div>
-
+		
 						</div>
-					</div>
-
-				</div>
-			</div>
-		</section><!--advantages-bottom end-->
+					</div><!--advantages__top end-->
+		
+					<div class="advantages__center">
+						<div class="container">
+		
+							<h2 class="title-text title-text--dark title-text--center">Качественная <span class="title-text--highlight"> поддержка</span></h2>
+							<p class="sub-title sub-title--secondary">Консультации, помощь и поддержка по любому вопросу круглосуточно. Наша служба поддержки поможет обойти блокировку Роскомнадзора, а также:</p>
+		
+							<div class="supports flex">
+								<div class="col-5-10">
+									<div class="text-box">
+										<h3 class="text-box__title">Наши менеджеры готовы помочь 24/7</h3>
+										<p class="text-box__text">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+									</div>
+									<div class="text-box">
+										<h3 class="text-box__title">Наши менеджеры готовы помочь 24/7</h3>
+										<p class="text-box__text">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+									</div>
+								</div>
+								
+								<div class="col-5-10">
+									<div class="text-box">
+										<h3 class="text-box__title">Наши менеджеры готовы помочь 24/7</h3>
+										<p class="text-box__text">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+									</div>
+									<div class="text-box">
+										<h3 class="text-box__title">Наши менеджеры готовы помочь 24/7</h3>
+										<p class="text-box__text">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+									</div>
+								</div>
+		
+							</div>
+		
+						</div>
+					</div><!--advantages__center end-->
+		
+					<div class="advantages__bottom">
+						<div class="container">
+							<div class="advantages-container flex">
+								
+								<div class="col-5-10">
+										<div class="text-box">
+											<h3 class="text-box__title">Учет мультиаккаунтов</h3>
+											<p class="text-box__text">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+										</div>
+										<div class="text-box">
+											<h3 class="text-box__title">50&#37; RevShare на первые полгода</h3>
+											<p class="text-box__text">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+										</div>
+								</div>
+		
+								<div class="col-5-10 flex flex-push">
+									<h2 class="title-text title-text--dark">ваши <br>
+										<span class="title-text--highlight">Преимущества</span>
+									</h2>
+									<img class="img" src="./images/pic-2.png" alt="Casino">
+								</div>
+		
+							</div>
+						</div>
+					</div><!--advantages__bottom end-->
+		</section>
 
 		<section class="commission">
 			<div class="container">
 
-				<div class="commission-title">
-					<h2 class="title-text">Комиссии &amp; <span class="text-color-accent">RevShare</span>
+				<div class="commission__title">
+					<h2 class="title-text title-text--light">Комиссии &amp; <span class="title-text--highlight">RevShare</span>
 					</h2>
-					<p>Условия сотрудничества и &#37; RevShare в зависимости от результатов вашей работы за отчетный период</p>
+					<p class="sub-title sub-title--primary">Условия сотрудничества и &#37; RevShare в зависимости от результатов вашей работы за отчетный период</p>
 				</div>
 
 				<div class="commission-container flex">
 
-					<div class="item">
-						<span class="amount">40%</span>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+					<div class="comission__item">
+						<span class="comission__amount">40&#37;</span>
+						<p class="comission__description">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
 					</div>
-					<div class="item">
-						<span class="amount">55%</span>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+					<div class="comission__item">
+						<span class="comission__amount">55&#37;</span>
+						<p class="comission__description">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
 					</div>
-					<div class="item">
-						<span class="amount">60%</span>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+					<div class="comission__item">
+						<span class="comission__amount">60&#37;</span>
+						<p class="comission__description">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
 					</div>
-					<div class="item">
-						<span class="amount">65%</span>
-						<p>Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
+					<div class="comission__item comission__item-end">
+						<span class="comission__amount">65&#37;</span>
+						<p class="comission__description">Ваши пользователи всегда с вами. Если пользователь пришел без рефкода, проект, по уникальному профайлу пользователя, определит его вебмастера и восстановит реффсвязь.</p>
 					</div>
 
 				</div>
@@ -236,39 +245,39 @@
 		<section class="feedback">
 			<div class="container flex">
 
-				<div class="col flex">
-					<h2 class="title-text">отзывы <br>
-						<span class="text-color-accent">вебмастеров</span>
+				<div class="col-5-10 flex">
+					<h2 class="title-text title-text--dark">отзывы <br>
+						<span class="title-text--highlight">вебмастеров</span>
 					</h2>
 				</div>
-				<div class="col flex">
-					<button class="btn prev-feedback">&larr;</button>
-					<button class="btn next-feedback">&rarr;</button>
+				<div class="col-5-10 flex">
+					<button class="btn btn-prev-feedback"></button>
+					<button class="btn btn-next-feedback"></button>
 					<!-- SLIDER -->
 					<div class="c-slider" id="hammer-slider">
 							<div class="c-slider__container">
 								<!-- Slide 1 -->
 								<div class="c-slider__slide">
 									<div class="card-feedback">
-										<img src="./images/user-pic.png" alt="userpic" class="avatar">
-										<span class="name">Веб Дядько</span>
-										<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+										<img src="./images/user-pic.png" alt="userpic" class="card-feedback__avatar">
+										<span class="card-feedback__name">Веб Дядько</span>
+										<p class="card-feedback__text">Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
 									</div>
 								</div>
 								<!-- Slide 2 -->
 								<div class="c-slider__slide">
 										<div class="card-feedback">
-											<img src="./images/user-pic.png" alt="userpic" class="avatar">
-											<span class="name">Other Man 1</span>
-											<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+											<img src="./images/user-pic.png" alt="userpic" class="card-feedback__avatar">
+											<span class="card-feedback__name">Other Man 1</span>
+											<p class="card-feedback__text">Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
 										</div>
 								</div>
 								<!-- Slide 3 -->
 								<div class="c-slider__slide">
 										<div class="card-feedback">
-											<img src="./images/user-pic.png" alt="userpic" class="avatar">
-											<span class="name">Other Man 2</span>
-											<p>Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
+											<img src="./images/user-pic.png" alt="userpic" class="card-feedback__avatar">
+											<span class="card-feedback__name">Other Man 2</span>
+											<p class="card-feedback__text">Ваши пользователи всегда с вами. Если пользователь пришел без ерефкода, проект, по уникальному.</p>
 										</div>
 								</div>
 							</div>
@@ -282,44 +291,34 @@
 		<section class="how-works">
 			<div class="container">
 
-				<div class="title">
-					<h2 class="title-text">как это <span class="text-color-accent">работает?</span></h2>
-				</div>
+				<h2 class="title-text title-text--dark">как это <span class="title-text--highlight">работает?</span></h2>
 
 				<div class="wflow-container flex">
 
-					<div class="step">
-						<span>1</span>
-						<p>
-							<span>Регистрируйся</span> в нашей <br>
-								партнерской программе
-						</p>
+					<div class="wflow__item">
+						<span class="wflow__step-number wflow__step-number--secondary">1</span>
+						<h4 class="wflow__step">Регистрируйся</h4>
+						<p class="wflow__description wflow__description--secondary">в нашей<br>партнерской программе</p>
 					</div>
-					<div class="step">
-						<span>2</span>
-						<p>
-							<span>выбери</span> в нашей <br>
-								партнерской программе
-						</p>
+					<div class="wflow__item wflow__item--secondary">
+						<span class="wflow__step-number">2</span>
+						<h4 class="wflow__step wflow__step--accent">выбери</h4>
+						<p class="wflow__description">в нашей<br>партнерской программе</p>
 					</div>
-					<div class="step">
-						<span>3</span>
-						<p>
-							<span>размести</span> в нашей <br>
-								партнерской программе
-						</p>
+					<div class="wflow__item">
+						<span class="wflow__step-number wflow__step-number--secondary">3</span>
+						<h4 class="wflow__step">размести</h4>
+						<p class="wflow__description wflow__description--secondary">в нашей<br>партнерской программе</p>
 					</div>
-					<div class="step">
-						<span>4</span>
-						<p>
-							<span>забирай</span> в нашей <br>
-								партнерской программе
-						</p>
+					<div class="wflow__item wflow__item--secondary">
+						<span class="wflow__step-number">4</span>
+						<h4 class="wflow__step wflow__step--accent">забирай</h4>
+						<p class="wflow__description">в нашей<br>партнерской программе</p>
 					</div>
 
 				</div>
 				<div class="button-container">
-					<button class="btn">зарегистрироваться</button>
+					<button class="btn btn--primary">зарегистрироваться</button>
 				</div>
 			</div>
 		</section>
@@ -328,15 +327,15 @@
 
 	<footer>
 		<div class="container">
-				<div class="bottom-nav flex">
+				<div class="nav-bottom flex">
 					<a href="#">
 					<img src="./images/logo.png" alt="Company Logo">
 					</a>
 					<div class="flex">
-						<a class="link" href="#">Главная</a>
-						<a class="link" href="#">Наши преимущества</a>
-						<a class="link" href="#">Как это работает</a>
-						<a class="link" href="#">Комиссии</a>
+						<a class="link nav-bottom__link" href="#">Главная</a>
+						<a class="link nav-bottom__link" href="#">Наши преимущества</a>
+						<a class="link nav-bottom__link" href="#">Как это работает</a>
+						<a class="link nav-bottom__link" href="#">Комиссии</a>
 					</div>
 				</div>
 		</div>

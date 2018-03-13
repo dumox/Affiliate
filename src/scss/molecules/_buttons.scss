@@ -1,0 +1,36 @@
+.btn {
+  border: none;
+  border-radius: 20px;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  width: 150px;
+  padding: 15px 5px;
+  text-transform: uppercase;
+  transition: all .2s;
+  
+  &--primary {
+    background-color: $dusty-orange;
+    color: $white-two;
+
+    &:hover, &:focus {
+      background: $white-two;
+      color: $dusty-orange;
+      // outline: none;
+    }
+  }
+
+  &--secondary {
+    background: $white-two;
+    color: $dusty-orange;
+
+    &:hover, &:focus {
+      background-color: $dusty-orange;
+      color: $white-two;
+    }
+  }
+}

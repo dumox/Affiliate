@@ -3,22 +3,22 @@
   padding-bottom: 60px;
 }
 
-.top-nav {
+.nav-top {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
   margin-bottom: 40px;
-  nav {
-    justify-content: center;
-  
-    .link {
-      padding: 10px;
-      margin-right: 5px;
-    }
+  &__link {
+    padding: 10px;
+    margin-right: 5px;
   }
 }
 
+nav {
+  justify-content: center;
+
+}
 
 .form-container {
   box-sizing: border-box;
@@ -29,197 +29,33 @@
   align-items: center;
   border-radius: 5px;
   background: rgba( $black-two, .55 );
-  h1 {
-    color: $white-two;
-    font-weight: 600;
-    line-height: 1.5;
-    .text-color-accent {
-      font-weight: 800;
-    }
-  }
-
-  .form {
-    width: 280px;
-    h4 {
-      padding: 0;
-      margin: 0;
-      font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 2.5;
-      letter-spacing: normal;
-      text-align: center;
-      text-transform: uppercase;
-
-    }
-    div {
-      margin: 18px 0 0 0;
-      font-size: 12px;
-      position: relative;
-      label:first-child {
-        text-transform: initial;
-        margin-top: 5px;
-        font-size: 11px;
-        display: block;
-      }
-      &:last-child {
-        text-align: center;
-      }
-    }
-
-    input {
-      width: 280px;
-      border: none;
-      border-bottom: 1px solid $white-two;
-      position: relative;
-      z-index: 3;
-      outline: none;
-      background: transparent;
-      font-size: 12px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 2.5;
-      letter-spacing: normal;
-      color: $white-two;
-      transition: all .2s;
-      -webkit-appearance: none;
-
-      &:hover {
-        border-bottom: 1px solid $color-accent;
-      }
-
-      &::placeholder {
-        font-size: 12px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 2.5;
-        letter-spacing: normal;
-        color: $white-two;
-      }
-      // &:focus {
-
-      // }
-
-      &[type="checkbox"] {
-        cursor: pointer;
-        background: transparent;
-        border: 1px solid $white-two;
-        border-radius: 2px;
-        height: 12px;
-        width: 12px;
-        margin: 0 3px 0 0;
-        padding: 0;
-        -webkit-appearance: none;
-        -webkit-transition: .15s;
-        &:checked {
-          background: $color-accent;
-        }
-      }
-
-      &[type="submit"] {
-        width: 165px;
-        height: 40px;
-        text-transform: uppercase;
-        font-family: "Gotham Pro";
-        color: $dusty-orange;
-        background: $white-two;
-        border-radius: 20px;
-        
-        &:hover {
-          border: none;
-          color: $white-two;
-          background: $dusty-orange;
-        }
-      }
-    }
-  }
 }
-label {
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  color: $white-two;
-}
-.label-helper {
-  position: absolute;
-  opacity: 0;
-  transition: .5s bottom ease, .1s opacity;
-  bottom: 0;
-  left: 0;
-  z-index: 1; 
-}
-// clear placeholder on focus
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent;}
-
-input:focus + .label-helper {
-    bottom: 95%;
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.73;
-    letter-spacing: normal;
-    line-height: 1;
-    opacity: 1;
-    color: $color-accent;
-}
-
-.form-title {
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-
-////////
-
-
-// input {
-//   background: transparent;
-//   border: none;
+// label {
 //   font-size: 12px;
-//   font-weight: normal;
-//   font-style: normal;
-//   font-stretch: normal;
 //   line-height: 2.5;
-//   letter-spacing: normal;
 //   color: $white-two;
-//   transition: all .2s;
-//   -webkit-appearance: none;
-
-//   &::placeholder {
-//     font-size: 12px;
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: 2.5;
-//     letter-spacing: normal;
-//     color: $white-two;
-//   }
-//   &:focus {
-//     outline-style: none;
-//     box-shadow: none;
-//     border-color: transparent;
-//   }
 // }
+// .label-helper {
+//   position: absolute;
+//   opacity: 0;
+//   transition: 2s bottom ease, 2s opacity;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 1; 
+// }
+// clear placeholder on focus
+// input:focus::-webkit-input-placeholder { color:transparent; }
+// input:focus::-webkit-input-placeholder { color:transparent; }
+// input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+// input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+// input:focus:-ms-input-placeholder { color:transparent;}
 
-
-// input[type="submit"] {
-//   width: 165px;
-//   height: 40px;
-//   text-transform: uppercase;
-//   font-family: "Gotham Pro";
-//   color: $dusty-orange;
-//   background: $white-two;
-//   border-radius: 20px;
-//}
+// input:focus + .label-helper {
+//     bottom: 95%;
+//     font-size: 11px;
+//     line-height: 2.73;
+//     line-height: 1;
+//     opacity: 1;
+//     color: $color-accent;
+//     transition: all 2s;
+// }

@@ -1,39 +1,37 @@
 .how-works {
-  padding: 60px 0 ;
-  .title {
-    padding-bottom: 50px;
+  padding: 60px 0;
+
+  .title-text {
+    margin-bottom: 50px;
     text-align: center;
-    text-transform: uppercase;
-    h2 {
-      font-weight: 800;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: center;
-    }
   }
 }
 
 .wflow-container {
-  padding-bottom: 65px;
-  .step {
-    text-align: center;
-    width: 240px;
-    min-height: 240px;
-    margin-right: 25px;
-    border-radius: 5px;
+  justify-content: space-between;
+}
+.wflow__item {
+  box-sizing: border-box;
+  text-align: center;
+  width: 230px;
+  min-height: 240px;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  background: $color-accent;
+  position: relative;
+
+  &--secondary {
     background: $color-secondary;
-    position: relative;
+  }
+
   &:not(:last-child)::after {
-    content: '\002192';
+    content: '';
+    background: $white-two url('../images/btn-arrow.png') no-repeat center;
     width: 60px;
     height: 60px;
-    font-size: 24px;
-    line-height: 60px;
     display: inline-block;
-    color: $color-accent;
-    background: $white-two;
     border-radius: 50%;
     box-shadow: 0px 10px 15px 0 rgba(13, 16, 18, 0.15);
     position: absolute;
@@ -41,62 +39,37 @@
     left: 92%;
     z-index: 2;
   }
-  &:nth-child(odd) {
-    background-color: $color-accent;
-    span {
-      color: $color-secondary;
-    }
-    p {
-      color: $color-secondary;
-      span {
-        color: $white-two;
-      }
-    }
-  }
-  &:last-child {
-    margin-right: 0;
-  }
+}
+.wflow__step-number {
+  color: $color-accent;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 800;
+
+  &--secondary {
+    color: $color-secondary;
   }
 }
+.wflow__step {
+  font-family: "Gotham Pro";
+  text-transform: uppercase;
+  color: $white-two;
+  font-weight: bold;
+  margin: 40px 0 0;
 
-.step {
-  span {
+  &--accent {
     color: $color-accent;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    display: block;
-    font-size: 30px;
-    font-weight: 800;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
   }
-  p {
-    color: $white-two;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-   span {
-    margin: 0 0 15px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: center;
-   } 
+}
+.wflow__description {
+  color: $white-two;
+
+  &--secondary {
+    color: $color-secondary;
   }
 }
 
 .button-container {
-  button {
-    width: 185px;
-  }
+  margin-top: 50px;
+  text-align: center;
 }

@@ -1,92 +1,71 @@
 .feedback {
   padding: 60px 0 75px;
-  .conatiner {
-    justify-content: space-between;
-    align-items: center;
-  }
-  .col {
-    width: 50%;
+
+  .col-5-10 {
     align-items: center;
     position: relative;
-     button {
-       outline: none;
-      width: 27px;
-      line-height: 0;
-      border-radius: initial;
-      background: transparent;
+  }
 
-      color: $color-accent;
-      position: absolute;
-      top: 35%;
-      font-size: 27px;
-      z-index: 3;
-      &:last-of-type {
-        right: 0;
+  .btn {
+    background: transparent url('../images/btn-arrow.png') no-repeat center;
+    outline: none;
+    width: 30px;
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    
+    &-next-feedback {
+      right: 0;
+      
+      &:hover {
+        transform: scale(1.3);
       }
-    &:hover {
-      transform: scale(1.3);
     }
-    &:active {
-      color: darken($color-accent, 20%);
-    }
+
+    &-prev-feedback {
+      transform: rotate(180deg);
+
+      &:hover {
+        transform: scale(1.3) rotate(180deg);
+      }
     }
   }
 }
 
 .card-feedback {
-  // background: tomato;
   width: 300px;
   text-align: center;
   margin: 0 auto;
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-  span {
-    margin-top: 10px;
-    display: block;
-    
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-  }
-  p {
-    margin: 0 auto;
-    margin-top: 5px;
-    width: 265px;
-    
-    font-size: 14px;
-    font-weight: normal;
-    font-style: italic;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: $greyish;
-  }
-}
-.name {
   font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
+}
+
+.card-feedback__avatar {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-feedback__name {
+  display: block;
+  font-weight: bold;
   color: $color-secondary;
+  padding-top: 10px;
+
   &::after {
     content: '\201D';
     display: block;
     color: $color-accent;
     font-family: 'Playfair Display', serif;
-    height: 48px;
+    height: 40px;
     font-size: 48px;
     font-weight: 900;
-    font-style: normal;
     margin: 0;
   }
+}
+
+.card-feedback__text {
+  width: 265px;
+  font-style: italic;
+  color: $greyish;
+  margin: 0 auto;
 }

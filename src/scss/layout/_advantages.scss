@@ -1,0 +1,137 @@
+//*****************
+//=== TOP ===
+//*****************
+
+.advantages__top {
+  padding: 60px 0;
+
+  .container {
+    align-items: center;
+  }
+
+  .col-4-10 {
+    flex-wrap: wrap;
+  }
+
+  .img {
+    margin-top: 35px;
+    transform: translateX(-50px);
+  }
+}
+
+.advantages {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+
+  &__advantage {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $color-secondary;
+    color: $white-two;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px 0px rgba(13, 16, 18, 0.15);
+    margin-bottom: 30px;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+
+    &::before {
+      @include square;
+      position: absolute;
+      top: 30%;
+    }
+
+    &--light {
+      background: $color-accent;
+      
+      &::before {
+        background: $white-two;
+      }
+    }
+  }
+} 
+
+
+
+
+
+//*****************
+//=== CENTER ===
+//*****************
+
+.advantages__center {
+  padding-top: 70px;
+  padding-bottom: 85px;
+
+  .sub-title {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+}
+
+.supports {
+  flex-wrap: wrap;
+
+  .text-box {
+    margin-left: 15px;
+    position: relative;
+
+    &::before {
+      @include square;
+      position: absolute;
+      top: 10px;
+      left: -15px;
+    }
+  }
+}
+
+
+
+
+//*****************
+//=== BOTTOM ===
+//*****************
+
+.advantages__bottom {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  .advantages-container {
+    justify-content: space-between;
+    }
+
+  .text-box {
+    margin-top: 30px;
+
+    &::before {
+      @include square;
+   }
+
+   .text-box__text {
+     max-width: 375px;
+   }
+  }
+  
+  .flex-push {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .title-text {
+    max-width: 260px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
