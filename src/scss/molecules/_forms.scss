@@ -72,7 +72,7 @@
 	display: block;
   width: 100%;
   font-weight: normal;
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 
 .input__label--haruki {
@@ -86,4 +86,5 @@
 .input--filled .input__label-content--haruki {
   transform: translate3d(0,-15px, 0);
   color: $color-accent;
+  font-size: 11px;
 }
